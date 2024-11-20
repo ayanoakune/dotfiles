@@ -18,8 +18,6 @@ nix-shell -p git --run 'git clone git@github.com:ayanoakune/dotfiles.git .dotfil
 
 3. Install packages and setup dotfiles:
 
-> Note: make sure that computers hostname is set to `nyx` before running the following command.
-
 ```sh
-nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch --flake ~/.dotfiles/nix'
+nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch --flake ~/.dotfiles/nix#nyx'
 ```
