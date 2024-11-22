@@ -2,22 +2,29 @@
   description = "Zenful nix-darwin system flake";
 
   inputs = {
+    # Unstable packages
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+
+    # Nix Darwin
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+
+    # Homebrew
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+
+    # Home Manager
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
   let
     configuration = { pkgs, config, ... }: {
 
       nixpkgs.config.allowUnfree = true;
 
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
+      # https://search.nixos.org/packages
       environment.systemPackages = [
-        pkgs.arc-browser
         pkgs.bun
         pkgs.fnm
         pkgs.git
@@ -26,28 +33,40 @@
         pkgs.neovim
         pkgs.pinentry_mac
         pkgs.pnpm
+        pkgs.starship
         pkgs.stow
         pkgs.vim
-        pkgs.vscode
       ];
 
       homebrew = {
         enable = true;
-        casks = [
-          "alt-tab"
-        ];
-        masApps = {
-          "Affinity Photo 2" = 1616822987;
-        };
-        onActivation.cleanup = "zap";
+        onActivation.cleanup = "zap"; # Removes all Homebrew packages not in the flake.
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
+
+        # https://formulae.brew.sh/
+        casks = [
+          "alt-tab"
+          "arc" # WIP
+          "firefox"
+          "nordvpn"
+          "orbstack" # WIP
+          "visual-studio-code" # WIP
+        ];
+
+        # App Store applications. Id is acquired from the URL.
+        masApps = {
+          "Affinity Photo 2" = 1616822987;
+          "Davinci Resolve" = 571213070;
+        };
       };
 
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono"]; })
       ];
 
+      # Set up applications in /Applications, so they are accessible from the
+      # dock and spotlight.
       system.activationScripts.applications.text = let
         env = pkgs.buildEnv {
           name = "system-applications";
@@ -68,6 +87,7 @@
         done
       '';
 
+      # MacOS system settings.
       system.defaults = {
         dock.autohide = true;
         loginwindow.GuestEnabled = false;
@@ -112,7 +132,7 @@
             # User owning the Homebrew prefix
             user = "akune";
 
-            # autoMigrate = true;
+            autoMigrate = true;
           };
         }
       ];

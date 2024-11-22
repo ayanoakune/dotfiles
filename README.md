@@ -21,3 +21,9 @@ nix-shell -p git --run 'git clone git@github.com:ayanoakune/dotfiles.git .dotfil
 ```sh
 nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch --flake ~/.dotfiles/nix#nyx'
 ```
+
+4. Create symlinks with dotfiles via GNU Stow:
+
+```sh
+cd ~/.dotfiles && stow .
+```
