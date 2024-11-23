@@ -48,9 +48,11 @@
         casks = [
           "alt-tab"
           "arc" # WIP
+          "curseforge"
           "firefox"
           "nordvpn"
           "orbstack" # WIP
+          "steam"
           "visual-studio-code" # WIP
         ];
 
