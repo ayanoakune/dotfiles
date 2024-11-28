@@ -55,6 +55,7 @@
           "steam"
           "ollama"
           "visual-studio-code" # WIP
+          "warp"
         ];
 
         # App Store applications. Id is acquired from the URL.
