@@ -53,6 +53,7 @@
           "nordvpn"
           "orbstack" # WIP
           "steam"
+          "ollama"
           "visual-studio-code" # WIP
         ];
 
