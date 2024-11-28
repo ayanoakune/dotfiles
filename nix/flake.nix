@@ -47,14 +47,14 @@
         # https://formulae.brew.sh/
         casks = [
           "alt-tab"
-          "arc" # WIP
+          "arc"
           "curseforge"
           "firefox"
           "nordvpn"
-          "orbstack" # WIP
+          "orbstack"
           "steam"
           "ollama"
-          "visual-studio-code" # WIP
+          "visual-studio-code"
           "warp"
         ];
 
