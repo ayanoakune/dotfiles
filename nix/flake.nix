@@ -33,6 +33,7 @@
         pkgs.neovim
         pkgs.pinentry_mac
         pkgs.pnpm
+        pkgs.rectangle
         pkgs.starship
         pkgs.stow
         pkgs.vim
