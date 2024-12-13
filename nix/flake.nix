@@ -36,6 +36,7 @@
         pkgs.starship
         pkgs.stow
         pkgs.vim
+        pkgs.zulu17 # Java 17
       ];
 
       homebrew = {
@@ -51,9 +52,9 @@
           "curseforge"
           "firefox"
           "nordvpn"
+          "ollama"
           "orbstack"
           "steam"
-          "ollama"
           "visual-studio-code"
           "warp"
         ];
