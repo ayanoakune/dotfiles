@@ -37,6 +37,7 @@
         pkgs.starship
         pkgs.stow
         pkgs.vim
+        pkgs.yt-dlp
         pkgs.zulu17 # Java 17
       ];
 
