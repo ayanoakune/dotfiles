@@ -33,7 +33,6 @@
         pkgs.neovim
         pkgs.pinentry_mac
         pkgs.pnpm
-        pkgs.rectangle
         pkgs.starship
         pkgs.stow
         pkgs.vim
@@ -53,9 +52,11 @@
           "arc"
           "curseforge"
           "firefox"
+          "iterm2"
           "nordvpn"
           "ollama"
           "orbstack"
+          "rectangle"
           "steam"
           "visual-studio-code"
           "warp"
