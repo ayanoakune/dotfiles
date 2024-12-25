@@ -19,7 +19,7 @@ nix-shell -p git --run 'git clone git@github.com:ayanoakune/dotfiles.git .dotfil
 3. Install packages and setup dotfiles:
 
 ```sh
-nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch --flake ~/.dotfiles/nix#nyx'
+nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch --flake ~/.dotfiles/nix#akune'
 ```
 
 4. Create symlinks with dotfiles via GNU Stow:

@@ -1,6 +1,6 @@
 # Aliases
 alias ls="ls -G"
-alias nix-rebuild="darwin-rebuild switch --flake ~/.dotfiles/nix#nyx"
+alias nix-rebuild="darwin-rebuild switch --flake ~/.dotfiles/nix#akune"
 
 # Use fnm - Fast Node Manager
 eval "$(fnm env --use-on-cd --shell zsh)"
