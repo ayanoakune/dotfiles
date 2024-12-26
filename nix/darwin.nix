@@ -1,4 +1,4 @@
-{ config, pkgs, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, ... }:
+{ config, pkgs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -7,6 +7,7 @@
   environment.systemPackages = [
     pkgs.bun
     pkgs.fnm
+    pkgs.fzf
     pkgs.git
     pkgs.gnupg
     pkgs.mkalias
@@ -21,14 +22,8 @@
   ];
 
   # Enable Homebrew and configure Homebrew casks
-  nix-homebrew = {
+  homebrew = {
     enable = true;
-
-    taps = {
-        "homebrew/homebrew-core" = homebrew-core;
-        "homebrew/homebrew-cask" = homebrew-cask;
-        "homebrew/homebrew-bundle" = homebrew-bundle;
-    };
 
     # Homebrew casks
     casks = [
@@ -44,12 +39,14 @@
       "steam"
       "visual-studio-code"
       "warp"
+      "font-jetbrains-mono"
     ];
   };
 
   # Fonts
   fonts.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono"]; })
+    pkgs.nerd-fonts.hack
+    pkgs.nerd-fonts.jetbrains-mono
   ];
 
   # MacOS system settings
