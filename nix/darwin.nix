@@ -16,6 +16,7 @@
     pkgs.pnpm
     pkgs.starship
     pkgs.stow
+    pkgs.tmux
     pkgs.vim
     pkgs.yt-dlp
     pkgs.zulu17 # Java 17
