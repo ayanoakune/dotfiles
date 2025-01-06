@@ -32,6 +32,7 @@
       "arc"
       "curseforge"
       "firefox"
+      "font-jetbrains-mono"
       "iterm2"
       "nordvpn"
       "ollama"
@@ -40,7 +41,6 @@
       "steam"
       "visual-studio-code"
       "warp"
-      "font-jetbrains-mono"
     ];
   };
 
