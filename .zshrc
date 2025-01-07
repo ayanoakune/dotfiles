@@ -10,6 +10,11 @@ else
   export GPG_TTY="$TTY"
 fi
 
+# Use custom location for the global Git configuration file
+# Personal config file is located in ~/.config/git/personal and not tracked
+# via Git.
+export GIT_CONFIG_GLOBAL=~/.config/git/config
+
 # Check if Homebrew is installed, and if so, set up its environment variables
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"

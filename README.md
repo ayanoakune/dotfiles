@@ -27,3 +27,19 @@ nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch 
 ```sh
 cd ~/.dotfiles && stow .
 ```
+
+## Updating Git configuration
+
+Git configuration is located in `.config/git` folder, separated into `config` & `personal` files. `config` is used for global settings and `personal` for user-specific settings.
+
+`personal` file should be updated with your personal information. To prevent Git from tracking changes to this file, run the following command:
+
+```sh
+git update-index --assume-unchanged .config/git/personal
+```
+
+To revert the change, use the following command:
+
+```sh
+git update-index --no-assume-unchanged .config/git/personal
+```
