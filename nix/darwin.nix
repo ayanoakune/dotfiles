@@ -10,6 +10,7 @@
     pkgs.fzf
     pkgs.git
     pkgs.gnupg
+    pkgs.lua
     pkgs.mkalias
     pkgs.neovim
     pkgs.pinentry_mac
