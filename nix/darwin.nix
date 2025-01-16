@@ -35,6 +35,7 @@
       "firefox"
       "font-jetbrains-mono"
       "iterm2"
+      "microsoft-teams"
       "nordvpn"
       "ollama"
       "orbstack"
