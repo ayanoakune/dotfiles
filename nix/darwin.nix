@@ -44,6 +44,12 @@
       "visual-studio-code"
       "warp"
     ];
+
+    # App Store applications. Id is acquired from the URL.
+    masApps = {
+      "Affinity Photo 2" = 1616822987;
+      "Davinci Resolve" = 571213070;
+    };
   };
 
   # Fonts
