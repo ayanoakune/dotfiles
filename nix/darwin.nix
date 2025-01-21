@@ -43,6 +43,7 @@
       "steam"
       "visual-studio-code"
       "warp"
+      "zen-browser"
     ];
 
     # App Store applications. Id is acquired from the URL.
