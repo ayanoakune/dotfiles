@@ -37,6 +37,7 @@
       "iterm2"
       "microsoft-teams"
       "nordvpn"
+      "notion"
       "ollama"
       "orbstack"
       "rectangle"
