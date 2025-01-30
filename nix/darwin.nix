@@ -43,7 +43,6 @@
       "rectangle"
       "steam"
       "visual-studio-code"
-      "warp"
       "zen-browser"
     ];
 
