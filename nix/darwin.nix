@@ -34,6 +34,7 @@
       "curseforge"
       "firefox"
       "font-jetbrains-mono"
+      "google-chrome"
       "hoppscotch"
       "iterm2"
       "microsoft-teams"
