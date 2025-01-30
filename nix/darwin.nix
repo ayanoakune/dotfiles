@@ -34,6 +34,7 @@
       "curseforge"
       "firefox"
       "font-jetbrains-mono"
+      "hoppscotch"
       "iterm2"
       "microsoft-teams"
       "nordvpn"
