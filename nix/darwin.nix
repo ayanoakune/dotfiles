@@ -51,6 +51,7 @@
     masApps = {
       "Affinity Photo 2" = 1616822987;
       "Davinci Resolve" = 571213070;
+      "DigiDoc4" = 1370791134;
     };
   };
 
