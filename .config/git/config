@@ -11,4 +11,20 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
-
+[alias]
+    # Shows the very last commit
+    last = log -1 HEAD
+    # Compact diff - shows changes in-line
+    changes = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+    # Pretty git log
+    history = log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cI) %C(bold blue)<%an>%Creset'
+    # List branches sorted by the date of the last commit on each branch (most recent first)
+    branches = branch --sort=-committerdate
+    # Provides a concise, short-form status output (+ branch)
+    file-changes = status -sb
+    # Amends the last commit without changing the commit message
+    amend = commit --amend --no-edit
+    # Undoes last commit, keeps changes.
+    undo = reset --soft HEAD^
+    # Fetches all remote branches and removes any remote branches that no longer exist on the remote
+    fetch-all = fetch --all --prune
