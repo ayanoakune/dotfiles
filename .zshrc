@@ -1,7 +1,7 @@
 # Aliases
 alias ls="ls -G"
 alias nix-rebuild="darwin-rebuild switch --flake ~/.dotfiles/nix#akune"
-alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix ."
+alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm ."
 
 # Set the GPG_TTY to be the same as the TTY, either via the env var
 # or via the tty command.
