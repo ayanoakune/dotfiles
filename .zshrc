@@ -55,3 +55,6 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 
 # Use Starship prompt # https://starship.rs
 eval "$(starship init zsh)"
+
+# Use Zoxide - Smarter cd command
+eval "$(zoxide init --cmd cd zsh)"

@@ -20,6 +20,7 @@
     pkgs.tmux
     pkgs.vim
     pkgs.yt-dlp
+    pkgs.zoxide
     pkgs.zulu17 # Java 17
   ];
 
