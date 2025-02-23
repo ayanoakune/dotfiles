@@ -3,6 +3,18 @@ alias ls="ls -G"
 alias nix-rebuild="darwin-rebuild switch --flake ~/.dotfiles/nix#akune"
 alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm ."
 
+# History
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
 # Set the GPG_TTY to be the same as the TTY, either via the env var
 # or via the tty command.
 if [ -n "$TTY" ]; then
