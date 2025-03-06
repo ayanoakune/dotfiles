@@ -83,7 +83,18 @@
     };
 
     loginwindow.GuestEnabled = false;
-    NSGlobalDomain.AppleICUForce24HourTime = true;
+
+    NSGlobalDomain = {
+      AppleICUForce24HourTime = true;
+      ApplePressAndHoldEnabled = false;
+      InitialKeyRepeat = 10;
+      KeyRepeat = 1;
+      NSAutomaticCapitalizationEnabled = false;
+      NSAutomaticDashSubstitutionEnabled = false;
+      NSAutomaticPeriodSubstitutionEnabled = false;
+      NSAutomaticQuoteSubstitutionEnabled = false;
+      NSAutomaticSpellingCorrectionEnabled = false;
+    };
   };
 
   # Enable nix-daemon for flakes
