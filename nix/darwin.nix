@@ -7,6 +7,7 @@
   environment.systemPackages = [
     pkgs.bat
     pkgs.bun
+    pkgs.eza
     pkgs.fnm
     pkgs.fzf
     pkgs.git
