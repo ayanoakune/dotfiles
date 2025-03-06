@@ -5,6 +5,7 @@
 
   # System packages (packages from nixpkgs)
   environment.systemPackages = [
+    pkgs.bat
     pkgs.bun
     pkgs.fnm
     pkgs.fzf

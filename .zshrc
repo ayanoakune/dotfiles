@@ -70,3 +70,7 @@ eval "$(starship init zsh)"
 
 # Use Zoxide - Smarter cd command
 eval "$(zoxide init --cmd cd zsh)"
+
+# Configure Bat (cat alternative) theme
+# You may need to run `bat cache --build` to refresh the cache
+export BAT_THEME=tokyonight_night
