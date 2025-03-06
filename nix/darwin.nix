@@ -71,6 +71,7 @@
     dock.autohide-time-modifier = 0.5;
     dock.show-recents = false;
     dock.minimize-to-application = true;
+    dock.mru-spaces = false;
     loginwindow.GuestEnabled = false;
     NSGlobalDomain.AppleICUForce24HourTime = true;
   };
