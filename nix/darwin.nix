@@ -69,6 +69,7 @@
     dock.autohide = true;
     dock.autohide-delay = 0.0;
     dock.autohide-time-modifier = 0.5;
+    dock.show-recents = false;
     loginwindow.GuestEnabled = false;
     NSGlobalDomain.AppleICUForce24HourTime = true;
   };
