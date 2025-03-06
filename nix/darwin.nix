@@ -9,6 +9,7 @@
     pkgs.fnm
     pkgs.fzf
     pkgs.git
+    pkgs.git-interactive-rebase-tool
     pkgs.gnupg
     pkgs.lua
     pkgs.mkalias
