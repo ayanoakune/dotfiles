@@ -75,6 +75,13 @@
       mru-spaces = false;
     };
 
+    finder = {
+      AppleShowAllExtensions = true;
+      FXEnableExtensionChangeWarning = false;
+      _FXShowPosixPathInTitle = true;
+      FXPreferredViewStyle = "Nlsv";
+    };
+
     loginwindow.GuestEnabled = false;
     NSGlobalDomain.AppleICUForce24HourTime = true;
   };
