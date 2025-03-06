@@ -66,12 +66,15 @@
 
   # MacOS system settings
   system.defaults = {
-    dock.autohide = true;
-    dock.autohide-delay = 0.0;
-    dock.autohide-time-modifier = 0.5;
-    dock.show-recents = false;
-    dock.minimize-to-application = true;
-    dock.mru-spaces = false;
+    dock = {
+      autohide = true;
+      autohide-delay = 0.0;
+      autohide-time-modifier = 0.5;
+      show-recents = false;
+      minimize-to-application = true;
+      mru-spaces = false;
+    };
+
     loginwindow.GuestEnabled = false;
     NSGlobalDomain.AppleICUForce24HourTime = true;
   };
