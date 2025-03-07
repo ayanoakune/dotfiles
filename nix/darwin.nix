@@ -89,7 +89,7 @@
       AppleICUForce24HourTime = true;
       ApplePressAndHoldEnabled = false;
       InitialKeyRepeat = 10;
-      KeyRepeat = 1;
+      KeyRepeat = 2;
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticDashSubstitutionEnabled = false;
       NSAutomaticPeriodSubstitutionEnabled = false;
