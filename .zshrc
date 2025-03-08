@@ -13,9 +13,6 @@ source ~/.config/zsh/zinit.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/bat.zsh
 
-# Use fzf - Fuzzy finder
-eval "$(fzf --zsh)"
-
 # Use fnm - Fast Node Manager
 eval "$(fnm env --use-on-cd --shell zsh)"
 
