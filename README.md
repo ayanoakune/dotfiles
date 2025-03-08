@@ -25,7 +25,7 @@ nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch 
 4. Create symlinks with dotfiles via GNU Stow:
 
 ```sh
-stow -d ~/.dotfiles -t ~ --ignore=nix .
+stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm .
 ```
 
 ## Helpful commands
@@ -39,7 +39,6 @@ After [initial setup](#initial-setup), you can use the following commands:
 
 > [!NOTE]
 > This solution is bit wonky. Be careful when updating `personal` file. Check if it's being tracked by Git.
-
 
 `personal` configuration file should be updated with your personal information (email, username etc).
 
