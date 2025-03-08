@@ -6,14 +6,7 @@ alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm ."
 # Source zsh configurations
 source ~/.config/zsh/history.zsh
 source ~/.config/zsh/fzf.zsh
-
-# Set the GPG_TTY to be the same as the TTY, either via the env var
-# or via the tty command.
-if [ -n "$TTY" ]; then
-  export GPG_TTY=$(tty)
-else
-  export GPG_TTY="$TTY"
-fi
+source ~/.config/zsh/gpg.zsh
 
 # Use custom location for the global Git configuration file
 # Personal config file is located in ~/.config/git/personal and not tracked
