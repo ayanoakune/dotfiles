@@ -11,6 +11,7 @@ source ~/.config/zsh/git.zsh
 source ~/.config/zsh/homebrew.zsh
 source ~/.config/zsh/zinit.zsh
 source ~/.config/zsh/completion.zsh
+source ~/.config/zsh/bat.zsh
 
 # Use fzf - Fuzzy finder
 eval "$(fzf --zsh)"
@@ -23,7 +24,3 @@ eval "$(starship init zsh)"
 
 # Use Zoxide - Smarter cd command
 eval "$(zoxide init --cmd cd zsh)"
-
-# Configure Bat (cat alternative) theme
-# You may need to run `bat cache --build` to refresh the cache
-export BAT_THEME=tokyonight_night
