@@ -13,9 +13,7 @@ source ~/.config/zsh/zinit.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/bat.zsh
 source ~/.config/zsh/fnm.zsh
-
-# Use Starship prompt # https://starship.rs
-eval "$(starship init zsh)"
+source ~/.config/zsh/starship.zsh
 
 # Use Zoxide - Smarter cd command
 eval "$(zoxide init --cmd cd zsh)"
