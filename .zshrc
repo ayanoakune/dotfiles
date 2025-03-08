@@ -8,11 +8,7 @@ source ~/.config/zsh/history.zsh
 source ~/.config/zsh/fzf.zsh
 source ~/.config/zsh/gpg.zsh
 source ~/.config/zsh/git.zsh
-
-# Check if Homebrew is installed, and if so, set up its environment variables
-if [[ -f "/opt/homebrew/bin/brew" ]] then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+source ~/.config/zsh/homebrew.zsh
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
