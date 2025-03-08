@@ -7,11 +7,7 @@ alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm ."
 source ~/.config/zsh/history.zsh
 source ~/.config/zsh/fzf.zsh
 source ~/.config/zsh/gpg.zsh
-
-# Use custom location for the global Git configuration file
-# Personal config file is located in ~/.config/git/personal and not tracked
-# via Git.
-export GIT_CONFIG_GLOBAL=~/.config/git/config
+source ~/.config/zsh/git.zsh
 
 # Check if Homebrew is installed, and if so, set up its environment variables
 if [[ -f "/opt/homebrew/bin/brew" ]] then
