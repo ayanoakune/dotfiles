@@ -10,14 +10,7 @@ source ~/.config/zsh/gpg.zsh
 source ~/.config/zsh/git.zsh
 source ~/.config/zsh/homebrew.zsh
 source ~/.config/zsh/zinit.zsh
-
-# Completion styling
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
-setopt GLOB_DOTS
+source ~/.config/zsh/completion.zsh
 
 # Use fzf - Fuzzy finder
 eval "$(fzf --zsh)"
