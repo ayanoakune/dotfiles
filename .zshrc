@@ -12,9 +12,7 @@ source ~/.config/zsh/homebrew.zsh
 source ~/.config/zsh/zinit.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/bat.zsh
-
-# Use fnm - Fast Node Manager
-eval "$(fnm env --use-on-cd --shell zsh)"
+source ~/.config/zsh/fnm.zsh
 
 # Use Starship prompt # https://starship.rs
 eval "$(starship init zsh)"
