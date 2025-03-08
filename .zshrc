@@ -3,17 +3,9 @@ alias ls="eza --color=always --long --git --icons=always --time-style=relative -
 alias nix-rebuild="darwin-rebuild switch --flake ~/.dotfiles/nix#akune"
 alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm ."
 
-# History
-HISTSIZE=5000
-HISTFILE=~/.zsh_history
-SAVEHIST=$HISTSIZE
-setopt appendhistory
-setopt sharehistory
-setopt hist_ignore_space
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
-setopt hist_ignore_dups
-setopt hist_find_no_dups
+# Source zsh configurations
+source ~/.config/zsh/history.zsh
+source ~/.config/zsh/fzf.zsh
 
 # Set the GPG_TTY to be the same as the TTY, either via the env var
 # or via the tty command.
@@ -61,9 +53,6 @@ setopt GLOB_DOTS
 
 # Use fzf - Fuzzy finder
 eval "$(fzf --zsh)"
-
-# Source fzf configurations
-source ~/.config/zsh/fzf.zsh
 
 # Use fnm - Fast Node Manager
 eval "$(fnm env --use-on-cd --shell zsh)"
