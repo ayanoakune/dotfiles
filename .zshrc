@@ -14,6 +14,4 @@ source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/bat.zsh
 source ~/.config/zsh/fnm.zsh
 source ~/.config/zsh/starship.zsh
-
-# Use Zoxide - Smarter cd command
-eval "$(zoxide init --cmd cd zsh)"
+source ~/.config/zsh/zoxide.zsh
