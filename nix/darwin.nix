@@ -35,6 +35,7 @@
     casks = [
       "alt-tab"
       "arc"
+      "bitwarden"
       "curseforge"
       "firefox"
       "font-jetbrains-mono"
