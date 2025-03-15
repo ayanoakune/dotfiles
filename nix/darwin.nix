@@ -37,6 +37,7 @@
       "arc"
       "bitwarden"
       "curseforge"
+      "cursor"
       "firefox"
       "font-jetbrains-mono"
       "google-chrome"
