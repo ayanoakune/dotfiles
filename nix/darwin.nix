@@ -49,6 +49,7 @@
       "ollama"
       "orbstack"
       "rectangle"
+      "shottr"
       "steam"
       "visual-studio-code"
       "zen-browser"
