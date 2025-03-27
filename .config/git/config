@@ -28,3 +28,6 @@
     undo = reset --soft HEAD^
     # Fetches all remote branches and removes any remote branches that no longer exist on the remote
     fetch-all = fetch --all --prune
+[sequence]
+    editor = interactive-rebase-tool
+
