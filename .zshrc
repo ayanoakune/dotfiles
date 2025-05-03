@@ -2,6 +2,7 @@
 alias ls="eza --color=always --long --git --icons=always --time-style=relative --no-user --octal-permissions --no-permissions"
 alias nix-rebuild="darwin-rebuild switch --flake ~/.dotfiles/nix#akune"
 alias stow-dot="stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm ."
+alias add-dock-spacer="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'; killall Dock"
 
 # Source zsh configurations
 source ~/.config/zsh/bat.zsh
