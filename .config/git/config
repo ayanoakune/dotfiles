@@ -2,6 +2,8 @@
     path = ~/.config/git/personal
 [commit]
     gpgsign = true
+[rebase]
+    autoSquash = true
 [gpg]
     program = gpg
 [core]
