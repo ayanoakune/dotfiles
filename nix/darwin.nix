@@ -102,9 +102,6 @@
     };
   };
 
-  # Enable nix-daemon for flakes
-  services.nix-daemon.enable = true;
-
   # Enable experimental flakes support
   nix.settings.experimental-features = "nix-command flakes";
 
