@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.11";
   home.username = "akune";
   home.homeDirectory = "/Users/akune";
 
@@ -44,6 +44,6 @@
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
-    options = ["--cmd cd"];
+    options = [ "--cmd cd" ];
   };
 }
