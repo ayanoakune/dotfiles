@@ -1,0 +1,4 @@
+# https://ghostty.org/docs/config
+
+theme = dark:catppuccin-frappe,light:catppuccin-latte
+font-family = "Hack Nerd Font Mono"
