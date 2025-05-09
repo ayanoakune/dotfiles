@@ -38,6 +38,7 @@
       "bitwarden"
       "curseforge"
       "cursor"
+      "ghostty"
       "firefox"
       "font-jetbrains-mono"
       "google-chrome"
