@@ -49,6 +49,7 @@
       "nordvpn"
       "ollama"
       "orbstack"
+      "raycast"
       "rectangle"
       "shottr"
       "steam"
