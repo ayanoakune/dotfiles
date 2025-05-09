@@ -31,6 +31,10 @@
   # Enable Homebrew and configure Homebrew casks
   homebrew = {
     enable = true;
+    global = {
+      brewfile = true;
+      lockfiles = true;
+    };
 
     # Homebrew casks
     casks = [
