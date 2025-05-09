@@ -105,7 +105,9 @@
   };
 
   # Enable experimental flakes support
-  nix.settings.experimental-features = "nix-command flakes";
+  nix.settings = {
+    experimental-features = ["nix-command" "flakes"];
+  };
 
   # Enable zsh
   programs.zsh.enable = true;
