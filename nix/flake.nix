@@ -17,7 +17,8 @@
   outputs = { self, nixpkgs, nix-darwin, home-manager, ... }:
     let
       system = "aarch64-darwin"; # MacOS on Apple Silicon
-    in {
+    in
+    {
       darwinConfigurations.akune = nix-darwin.lib.darwinSystem {
         system = system;
         modules = [
