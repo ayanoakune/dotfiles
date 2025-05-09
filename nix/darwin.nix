@@ -16,6 +16,7 @@
     pkgs.lua
     pkgs.mkalias
     pkgs.neovim
+    pkgs.nixpkgs-fmt
     pkgs.pinentry_mac
     pkgs.pnpm
     pkgs.starship
