@@ -48,7 +48,6 @@
       "font-jetbrains-mono"
       "google-chrome"
       "hoppscotch"
-      "iterm2"
       "mac-mouse-fix"
       "microsoft-teams"
       "nordvpn"
