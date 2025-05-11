@@ -63,6 +63,7 @@
 
     # App Store applications. Id is acquired from the URL.
     masApps = {
+      "Affinity Designer 2" = 1616831348;
       "Affinity Photo 2" = 1616822987;
       "Davinci Resolve" = 571213070;
       "DigiDoc4" = 1370791134;
