@@ -39,7 +39,6 @@
     # Homebrew casks
     casks = [
       "alt-tab"
-      "arc"
       "bitwarden"
       "curseforge"
       "cursor"
