@@ -25,7 +25,7 @@ nix run nix-darwin --extra-experimental-features 'nix-command flakes' -- switch 
 4. Create symlinks with dotfiles via GNU Stow:
 
 ```sh
-stow -d ~/.dotfiles -t ~ --ignore=nix --ignore=iterm .
+stow -d ~/.dotfiles -t ~ --ignore=nix .
 ```
 
 ## Helpful commands
