@@ -48,7 +48,6 @@
       "google-chrome"
       "hoppscotch"
       "mac-mouse-fix"
-      "microsoft-teams"
       "nordvpn"
       "ollama"
       "orbstack"
