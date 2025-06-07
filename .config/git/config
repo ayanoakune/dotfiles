@@ -1,11 +1,13 @@
 [include]
     path = ~/.config/git/personal
+[gpg]
+    program = gpg
+[credential]
+    helper = osxkeychain
 [commit]
     gpgsign = true
 [rebase]
     autoSquash = true
-[gpg]
-    program = gpg
 [core]
     editor = vim
 [filter "lfs"]
