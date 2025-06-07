@@ -13,6 +13,7 @@
     pkgs.git
     pkgs.git-interactive-rebase-tool
     pkgs.gnupg
+    pkgs.go
     pkgs.lua
     pkgs.mkalias
     pkgs.neovim
