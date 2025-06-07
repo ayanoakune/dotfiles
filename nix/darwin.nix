@@ -52,7 +52,6 @@
       "ollama"
       "orbstack"
       "raycast"
-      "rectangle"
       "shottr"
       "steam"
       "visual-studio-code"
