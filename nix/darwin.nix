@@ -75,6 +75,8 @@
     pkgs.nerd-fonts.jetbrains-mono
   ];
 
+  system.primaryUser = "akune";
+
   # MacOS system settings
   system.defaults = {
     dock = {
