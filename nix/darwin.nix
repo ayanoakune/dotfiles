@@ -54,7 +54,6 @@
       "raycast"
       "shottr"
       "steam"
-      "visual-studio-code"
     ];
 
     # App Store applications. Id is acquired from the URL.
