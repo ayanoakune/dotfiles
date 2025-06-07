@@ -55,7 +55,6 @@
       "shottr"
       "steam"
       "visual-studio-code"
-      "zen-browser"
     ];
 
     # App Store applications. Id is acquired from the URL.
